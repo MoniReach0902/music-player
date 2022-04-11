@@ -7,6 +7,9 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 50px rgb(136, 130, 130);
     overflow: scroll;
+    transform: translateX(-100%);
+    transition: all 0.5s ease ;
+    opacity: 0;
     h2{
         padding: 2rem;
     }
@@ -47,4 +50,11 @@ background: transparent;
 }
 *::-webkit-scrollbar {
     width: 5px;
+}
+.selected{
+    background-color: rgba(142, 135, 191, 0.5);
+}
+.active-library{
+    transform: translateX(0%);
+    opacity: 1;
 }
